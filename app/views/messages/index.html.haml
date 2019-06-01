@@ -39,12 +39,12 @@
         .new-message
           .input-box
             .input-box__text
-              %input{}
+              %input{:placeholder => "type a message"} 
             .image-label
               %form{:action => "#", :method => "post", :enctype => "multipart/form-data"}
                 %label
                   %i.far.fa-image
-                  %input{:placeholder => "type a message",:class => "test",:type => "file", :name => "upfile", :value => ".upload-label"}
+                  %input{:class => "test",:type => "file", :name => "upfile", :value => ".upload-label"}
           .new-message__submit-btn
             .new-message__submit-btn__text
               Send
