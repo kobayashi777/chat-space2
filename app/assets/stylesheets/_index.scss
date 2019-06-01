@@ -39,9 +39,6 @@ body{
                   top:35px;
                   left:260px;
                }//.user-menu__new-group
-               .color-change{
-                  color:orange;
-               }
             }//user-menu
            }//.side-header
          .groups{
@@ -113,9 +110,8 @@ body{
                   top: 20%;
                   text-align:center;
                   color:var(--button-color);
-
-                }
-              }// margin-top:30px;
+                }//.main-header__edit-btn__text
+              }//.main-header__edit-btn
            }//.main-header
          .messages{
           height:calc(100vh - 100px);
@@ -143,7 +139,6 @@ body{
                    .upper-info__data{
                    font-size:12px;
                    text-align:left;
-                  //  padding-top:5px;
                    color:#999;
                    }
                 }
@@ -151,40 +146,30 @@ body{
                    height:20px;
                    width:50px;
                 font-size:14px;
-               //  display: block;
                 text-align:left;
-               // position:relative;
-               // top:30px;
-               // left:1px;
                 color:var(--font-color);
                 margin-top:10px;
-                }
+                }//.massage__text
              }//.massage
          }//.messages
         .form{
             background-color:#eee;
-            // width:100%;
             padding: 20px 40px;
             width: calc(100% - 80px);
-            // width: calc(100vw - 300px);
             height: 50px;
-            // position:fixed;
             bottom:0;
             position:absolute;
-            // padding: 20px 40px;
             .new-message {
                display: flex;
                .input-box {
                   height: 50px;
                   position: relative;
                   width:calc(100% - 130px);
-                  // margin:0 40px;
                   background-color:var(--sidebar-color);
                   display:flex;
                   .input-box__text {
                      width:100%;
                      height:100%;
-                     // padding: 10px 40px 10px 10px;
                      color: var(--font-color);
                      border-style: none;
                      font-size:16px;
@@ -193,7 +178,6 @@ body{
                         height:100%;
                         }
                      }//.input-box__text
-                    
                   .image-label{
                      height:30px;
                      position: absolute;
@@ -202,8 +186,8 @@ body{
                      .test{
                       font-family: FontAwesome;
                       display:none;
-                     }
-                  }
+                     }//.test
+                  }//.image-label
                }//.input-box 
                  .new-message__submit-btn {
                   background-color:var(--button-color);
@@ -220,7 +204,7 @@ body{
                     top: 20%;
                     text-align:center;
                     color:var(--sidebar-color);
-                  }
+                  }//.new-message__submit-btn__text
               }//.new-message__submit-btn
                }//.new-message
            }//.form
