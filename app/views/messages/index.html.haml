@@ -1,5 +1,5 @@
 !!!
-%html{:lang => "ja"}
+%html{lang: "ja"}
 %head
 %meta(charset="UTF-8")
 %link(href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet")
@@ -18,7 +18,7 @@
             = link_to "#" do
               %i.fas.fa-cog
       .groups
-        = render :partial => "user"
+        = render partial:  "user"
     .chat-main
       .main-header
         .current-group
@@ -32,19 +32,19 @@
      
       .messages
         .message
-          = render :partial => "message"
+          = render partial: "message"
         .message
-          = render :partial => "message"
+          = render partial: "message"
       .form
         .new-message
           .input-box
             .input-box__text
-              %input{:placeholder => "type a message"} 
+              %input{placeholder: "type a message"} 
             .image-label
-              %form{:action => "#", :method => "post", :enctype => "multipart/form-data"}
+              %form{action: "#", method: "post", enctype: "multipart/form-data"}
                 %label
                   %i.far.fa-image
-                  %input{:class => "test",:type => "file", :name => "upfile", :value => ".upload-label"}
+                  %input{class: "test",type: "file", name: "upfile", value: ".upload-label"}
           .new-message__submit-btn
             .new-message__submit-btn__text
               Send
