@@ -24,17 +24,17 @@ body{
             align-items: center;
             font-weight: bold;
             font-size:16px;
-            .side-header__user-name{
+            &__user-name{
               }//side-header__user-name
             .user-menu{
                   display: flex;
                   float: right;
-               .user-menu__edit-user{
+               &__edit-user{
                   position:absolute;
                   top:35px;
                   left:240px;
                }//.user-menu__edit-user
-               .user-menu__new-group{
+               &__new-group{
                   position:absolute;
                   top:35px;
                   left:260px;
@@ -49,13 +49,13 @@ body{
             .group{
                margin-top: 20px;
                margin-bottom: 40px;
-               .group__group-name {
+               &__group-name {
                   font-size: 15px;
                   margin-bottom: 5px;
                   font-weight: bold;
                   color:var(--sidebar-color);
                 }//.group__group-name
-               .group__latest-message {
+               &__latest-message {
                margin-top:5px;
                font-size: 11px;
                font-weight: bold;
@@ -82,7 +82,7 @@ body{
             .current-group {
                width:100px;
                padding-top:35px;
-              .current-group__name{
+               &__name{
                  line-height:20px;
                  font-size:20px;
                  color:#333333;
@@ -91,7 +91,7 @@ body{
                   line-height:12px;
                   font-size:12px;
                   margin-top:15px;
-                  .member-list__member{
+                  &__member{
                      }//.member-list__member
                }//.member-list
              }//.current-group
@@ -105,7 +105,7 @@ body{
                 right:40px;
                 padding:0 20px;
                 font-size:18px;
-                .main-header__edit-btn__text{
+                &__text{
                   position: relative;
                   top: 20%;
                   text-align:center;
@@ -129,14 +129,14 @@ body{
                   height:20px;
                   width:200px;
                   display: flex;
-                   .upper-info__user{
+                  &__user{
                    width:50px;
                    color:var(--font-color);
                    text-align:left;
                    font-size:16px;
                    font-weight: bold;
                    }
-                   .upper-info__data{
+                   &__data{
                    font-size:12px;
                    text-align:left;
                    color:#999;
@@ -167,7 +167,7 @@ body{
                   width:calc(100% - 130px);
                   background-color:var(--sidebar-color);
                   display:flex;
-                  .input-box__text {
+                  &__text {
                      width:100%;
                      height:100%;
                      color: var(--font-color);
@@ -199,7 +199,7 @@ body{
                   right:40px;
                   padding:0 20px;
                   font-size:18px;
-                  .new-message__submit-btn__text{
+                  &__text{
                     position: relative;
                     top: 20%;
                     text-align:center;
