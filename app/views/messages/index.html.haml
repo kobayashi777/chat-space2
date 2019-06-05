@@ -1,4 +1,3 @@
-
 .wrapper
   = render 'shared/side_bar'
   .chat-main
@@ -17,9 +16,9 @@
       = form_for [@group, @message] do |f|
         .new-message
           .input-box
-            = f.text_field :content, class:'input', placeholder: 'type a message'
+            = f.text_field :content, class:'input', placeholder: 'type a message',id: "#new_comment"
             .image-label
-              %form{action: "#", method: "post", enctype: "multipart/form-data"}
+              %form_for{action: "#", method: "post", enctype: "multipart/form-data", class:'jq'}
                 %label
                   %i.far.fa-image
                   = f.file_field :image, class: 'image-label-basic'
