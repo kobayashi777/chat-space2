@@ -118,16 +118,16 @@ body{
           padding: 0 40px;
           width: calc(100% - 80px);
           margin-top:82px;
-          text-align: center;
+         //  text-align: center;
           background-color:#fafafa;
           overflow: scroll;
           .message{
-                height:80px;
-                width:200px;
+               max-height:100%;
+                width:100%;
                 margin-top:20px;
                 .upper-info{
                   height:20px;
-                  width:300px;
+                  width:100%;
                   display: flex;
                   &__user{
                    width:100px;
@@ -135,22 +135,25 @@ body{
                    text-align:left;
                    font-size:16px;
                    font-weight: bold;
-                   }
+                   }//&__user
                    &__data{
                    font-size:12px;
                    text-align:left;
                    color:#999;
-
-                   }
-                }
+                   }//&__data
+                }//.upper-info
                 .massage__text{
                    height:20px;
-                   width:50px;
+                   width:100%;
                 font-size:14px;
                 text-align:left;
                 color:var(--font-color);
                 margin-top:10px;
                 }//.massage__text
+                .message__to{
+                  width:200px;
+                  height:200px;
+                }
              }//.massage
          }//.messages
         .form{
