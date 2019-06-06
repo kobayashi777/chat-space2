@@ -16,12 +16,11 @@
       = form_for [@group, @message] do |f|
         .new-message
           .input-box
-            = f.text_field :content, class:'input', placeholder: 'type a message',id: "#new_comment"
+            = f.text_field :content,class:'input', placeholder: 'type a message'
             .image-label
-              %form_for{action: "#", method: "post", enctype: "multipart/form-data", class:'jq'}
-                %label
-                  %i.far.fa-image
-                  = f.file_field :image, class: 'image-label-basic'
-                  %input{class: "test",type: "file", name: "upfile", value: ".upload-label"}
+              %label
+                %i.far.fa-image
+                = f.file_field :image, class: 'image-label-basic'
+                %input{class: "test",type: "file", name: "upfile", value: ".upload-label"}
           .new-message__submit-btn
             = f.submit 'Send',class: 'new-message__submit-btn__form'
