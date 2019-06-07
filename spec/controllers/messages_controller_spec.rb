@@ -83,8 +83,9 @@ describe MessagesController do
 
       it 'redirects to new_user_session_path' do
         post :create, params: params
-        expect(response).to redirect_to(new_user_session_path)
+        expect(response).to redirect_to(new_user_session_path)  
       end
     end
   end
 end
+
