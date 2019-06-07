@@ -36,7 +36,7 @@
       var html = buildHTML(data);
       $('.messages').append(html)
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
-      $('.new-message__submit-btn',type="reset").attr('disabled', false);
+      $('.new-message__submit-btn__form').attr('disabled', false);
       $('.input').val("");
       $('.image-label-basic').val("");
     })
