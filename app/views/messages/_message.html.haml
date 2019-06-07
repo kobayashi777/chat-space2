@@ -7,7 +7,5 @@
   .massage__text
     - if message.content.present?
       = message.content
-    - else
   - if message.image.present?
     = link_to image_tag(message.image,class: "message__to")
-  - else
