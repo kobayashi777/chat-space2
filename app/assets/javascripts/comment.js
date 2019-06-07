@@ -14,9 +14,7 @@
                   <div class = "message__text">
                   ${message.content}
                   </div>
-                  <div class = "message__to">
                   ${img}
-                  </div>
                 </div>`
     return html;
   }
@@ -37,8 +35,7 @@
       $('.messages').append(html)
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
       $('.new-message__submit-btn__form').attr('disabled', false);
-      $('.input').val("");
-      $('.image-label-basic').val("");
+      $('.new_message')[0].reset();
     })
     .fail(function(){
       alert('メッセージを入力して下さい');
