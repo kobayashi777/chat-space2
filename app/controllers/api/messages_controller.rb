@@ -6,10 +6,9 @@ class Api::MessagesController < ApplicationController
     
     @messages = @group.messages.includes(:user)
     
-      respond_to do |format|
+    respond_to do |format|
       format.html
       format.json { @new_messages = @messages.where('id > ?', params[:id]) }
-      end
-      
+    end
   end
 end

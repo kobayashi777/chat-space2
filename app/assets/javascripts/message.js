@@ -44,10 +44,10 @@ $(function() {
       })
     }
 
-    $(window).on('load',function(){ 
-      if(document.URL.match("localhost:3000/group/[0-9a-z]+")) {
-         setInterval(reloadMessages, 5000);
+   
+    if(document.URL.match(/\/groups\/\d+\/messages/)){
+        setInterval(reloadMessages, 5000);
       }
-    });
+   
 });
 
