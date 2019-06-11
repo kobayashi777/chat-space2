@@ -2,7 +2,7 @@
   function buildHTML(message){
     var content = message.content ? `${ message.content }` : "";
     var img = message.image.url ? `<img src= ${ message.image.url } class = "message__to">` : "";
-    var html =  `<div class="message">
+    var html =  `<div class="message" data-message-id="${message.id}">
                   <div class = "upper-info">
                     <div class = "upper-info__user">
                       ${message.user_name}
