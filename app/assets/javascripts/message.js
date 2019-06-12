@@ -17,9 +17,9 @@ $(function() {
                   ${img}
                 </div>`
     return html;
-  };
+     };
     var reloadMessages = function() {
-
+      
       var  last_message_id = $('.message:last').data('message-id');
 
       $.ajax({
@@ -42,12 +42,10 @@ $(function() {
       .fail(function() {
         alert('自動更新に失敗しました');
       })
-    }
+  }
 
-   
-    if(document.URL.match(/\/groups\/\d+\/messages/)){
-        setInterval(reloadMessages, 5000);
-      }
-   
+ if (document.URL.match(/\/groups\/\d+\/messages/)) {
+  setInterval(reloadMessages, 5000);
+}
+
 });
-
