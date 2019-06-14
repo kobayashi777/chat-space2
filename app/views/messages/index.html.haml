@@ -10,7 +10,7 @@
           Member:
       .main-header__edit-btn
         .main-header__edit-btn__text
-          Edit
+          = link_to "Edit", edit_group_path(params[:group_id]), method: :get
     .messages
       = render @messages
     .form
