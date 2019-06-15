@@ -5,9 +5,13 @@
     .main-header
       .current-group
         .current-group__name
-          test
+          = @group.name
         .member-list
-          Member:
+          .member-list__title
+            Member : 
+          .member-list__name
+            - @group.group_users.each do |group_user|
+              = group_user.user.user_name
       .main-header__edit-btn
         .main-header__edit-btn__text
           = link_to "Edit", edit_group_path(params[:group_id]), method: :get
