@@ -1,12 +1,12 @@
 $(function() {
-    
+ 
   var buildHTML = function(message) {
     var content = message.content ? `${ message.content }` : "";
     var img = message.image.url ? `<img src= ${ message.image.url } class = "message__to">` : "";
     var html =  `<div class="message" data-message-id="${message.id}">
                   <div class = "upper-info">
                     <div class = "upper-info__user">
-                      ${message.user_name}
+                      ${message.name}
                     </div>
                     <div class = "upper-info__data">
                       ${message.created_at}
@@ -19,10 +19,9 @@ $(function() {
                 </div>`
     return html;
      };
+   
     var reloadMessages = function() {
-      if (document.URL.match(/\/groups\/\d+\/messages/)) {
-        setInterval(reloadMessages, 5000);
-      }
+
       var  last_message_id = $('.message:last').data('message-id');
       $.ajax({
         url: "api/messages",
@@ -43,7 +42,13 @@ $(function() {
     })
       .fail(function() {
         alert('自動更新に失敗しました');
+        
       })
   }
+  
+    if (document.URL.match(/\/groups\/\d+\/messages/)) {
+      console.log("ii")
+      setInterval(reloadMessages, 5000);
+    }
 
 });

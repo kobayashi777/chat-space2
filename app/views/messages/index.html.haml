@@ -11,7 +11,7 @@
             Member : 
           .member-list__name
             - @group.group_users.each do |group_user|
-              = group_user.user.user_name
+              = group_user.user.name
       .main-header__edit-btn
         .main-header__edit-btn__text
           = link_to "Edit", edit_group_path(params[:group_id]), method: :get

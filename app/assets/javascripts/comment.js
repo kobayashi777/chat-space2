@@ -5,7 +5,7 @@
     var html =  `<div class="message" data-message-id="${message.id}">
                   <div class = "upper-info">
                     <div class = "upper-info__user">
-                      ${message.user_name}
+                      ${message.name}
                     </div>
                     <div class = "upper-info__data">
                       ${message.date}
